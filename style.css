@@ -1,0 +1,155 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;    
+}
+.header{
+    height: 4rem;
+    background-color: rgb(50 32 73);
+    color: white;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+img{
+    height:12rem ;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.img1{
+    height:12.7rem;
+    width: 12.7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1:hover{
+    background-color: rgb(50 32 73);
+    cursor: pointer;
+}
+.counter{
+    
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2rem;
+
+}
+.score{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#user-score, #comp-score{
+font-size: 3rem;
+}
+.msg-button p{
+    background-color: rgb(50 32 73);
+    height: 4rem;
+    width: auto;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    color: white;
+    
+}
+.msg{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+@media all and (max-width:450px) {
+    .container{
+        height: 65vh;
+        flex-direction: column;
+        gap: 0.7rem;    
+        
+    }
+    img{
+        height:7rem ;
+        width: 7rem;
+       
+    }
+    .header{
+        height: 3rem; 
+        line-height: 3rem;
+        font-size: 1.4rem;
+        
+    }
+    #user-score, #comp-score{
+        font-size: 2rem;
+        }
+        .img1{
+            height:7.7rem ;
+            width: 7.7rem;
+        }
+        .counter{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        .msg{
+            margin-top: 1rem;
+        }
+        .msg-button p{  
+            height: 2.5rem;
+            width: auto;
+            line-height: 2.5rem;
+            font-size: 1rem;
+        }
+        
+}
+@media (min-width:450px) and (max-width:700px) {
+    .container{
+        height: 40vh;
+        
+        gap: 2rem;    
+        
+    }
+    img{
+        height:7rem ;
+        width: 7rem;
+       
+    }
+    .header{
+        height: 3rem; 
+        line-height: 3rem;
+        font-size: 1.4rem;
+        
+    }
+    #user-score, #comp-score{
+        font-size: 2rem;
+        }
+        .img1{
+            height:7.7rem ;
+            width: 7.7rem;
+        }
+        .counter{
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+        .msg{
+            margin-top: 3rem;
+        }
+        .msg-button p{  
+            height: 2.5rem;
+            width: auto;
+            line-height: 2.5rem;
+            font-size: 1rem;
+        }
+        
+}
